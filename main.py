@@ -22,4 +22,4 @@ class MyCLient(discord.Client):
 #ligando o bot
 client = MyCLient()
 #token do bot
-client.run('MTAwOTYzMzc3Mjk1OTk3MzUwOA.Gm1FOX.fAcJRCLbsUtIqgRX_wPdMAw3KB005Iq97M6XP4')
+client.run('Your token here.')
