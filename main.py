@@ -2,7 +2,7 @@ import discord
 import random
 
 #configurando o dado:
-d8 = random.randrange(8)
+ 
 
 #codigo base:
 class MyCLient(discord.Client):
@@ -13,12 +13,12 @@ class MyCLient(discord.Client):
         if message.author == client.user:
             return
 
-        if message.content.startswith('?hi'):
-            await message.channel.send('HI brother! ')
+        if message.content.startswith('-'):
+            await message.channel.send('This command is incomplete or wrong! Use  "-help" to learn more about the commands.')
 
-        if message.content.startswith('?d8'):
-            await message.channel.send(f'@{message.author}: {d8}')
-
+        if message.content.startswith('-d8'):
+            d8 = random.choice([1,2,3,4,5,6,7,8])
+            await message.channel.send(f'{message.author.mention} tirou {d8}')
 #ligando o bot
 client = MyCLient()
 #token do bot
