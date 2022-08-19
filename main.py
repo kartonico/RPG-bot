@@ -1,9 +1,6 @@
 import discord
 import random
 
-#configurando o dado:
- 
-
 #codigo base:
 class MyCLient(discord.Client):
     async def on_ready(self):
