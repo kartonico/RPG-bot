@@ -18,32 +18,33 @@ class MyCLient(discord.Client):
 
         if message.content.startswith('D4'):
             dice = random.choice(dc.d4)
-            await message.channel.send(f'{message.author.mention} took out: {dice}')
+            await message.channel.send(f'> {message.author.mention}\n> `Took out: {dice}`')
 
         if message.content.startswith('D6'):
             dice = random.choice(dc.d6)
-            await message.channel.send(f'{message.author.mention} took out: {dice}')
+            await message.channel.send(f'> {message.author.mention}\n> `Took out: {dice}`')
 
         if message.content.startswith('D8'):
             dice = random.choice(dc.d8)
-            await message.channel.send(f'{message.author.mention} took out: {dice}')
+            await message.channel.send(f'> {message.author.mention}\n> `Took out: {dice}`')
 
-        if message.content.startswith('!D10'):
+        if message.content.startswith('D10'):
             dice = random.choice(dc.d10)
-            await message.channel.send(f'{message.author.mention} took out: {dice}')
+            await message.channel.send(f'> {message.author.mention}\n> `Took out: {dice}`')
 
         if message.content.startswith('D12'):
             dice = random.choice(dc.d12)
-            await message .channel.send(f'{message.author.mention} took out: {dice}')
+            await message .channel.send(f'> {message.author.mention}\n> `Took out: {dice}`')
         
         if message.content.startswith('D20'):
             dice = random.choice(dc.d20)
-            await message.channel.send(f'{message.author.mention} took out: {dice}')
+            await message.channel.send(f'> {message.author.mention}\n> `Took out: {dice}`')
 
         if message.content.startswith('-d100'):
             dice = random.choice(dc.d100)
-            await message.channel.send(f'{message.author.mention} took out: {dice}')
+            
+            await message.channel.send(f'> {message.author.mention}\n> `Took out: {dice}`')
         
 #starting the bot:
 client = MyCLient()
-client.run('Your token here.')
+client.run('Your token here')
