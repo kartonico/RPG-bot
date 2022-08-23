@@ -14,7 +14,7 @@ class MyCLient(discord.Client):
 
 #Defining functions:
         if message.content.startswith('-help'):
-            await message.channel.send('In construction.')
+            await message.channel.send('```python\n@Commands:\n D4 = Four-sided die.\n D6 = Six-sided die.\n D8 = Eight-sided die.\n D10 = Ten-sided die\n D12 = Twelve-sided die.\n D20 = Twenty-sided die.\n -d100 = One hundred-sided die.```')
 
         if message.content.startswith('D4'):
             dice = random.choice(dc.d4)
@@ -47,4 +47,4 @@ class MyCLient(discord.Client):
         
 #starting the bot:
 client = MyCLient()
-client.run('Your token here')
+client.run('Your code here')
